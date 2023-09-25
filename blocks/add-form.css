@@ -1,0 +1,95 @@
+.add-form__inner {
+  margin-bottom: 32px;
+  padding: 28px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 #ccc;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.add-form__label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+.add-form__input {
+  position: relative;
+  min-width: 100%;
+  min-height: 40px;
+  line-height: 18px;
+  background-color: #f4f2ff;
+  border-style: none;
+  border-radius: 6px;
+  resize: none;
+}
+
+.add-form__input:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.add-form__wrap-discount {
+  padding-left: 50px;
+  margin-bottom: 12px;
+}
+
+.add-form__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.add-form__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #f4f2ff;
+  border-radius: 6px;
+}
+
+.add-form__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -40px;
+  width: 20px;
+  height: 10px;
+  border: 3px solid #000;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.add-form__checkbox:checked::after {
+  opacity: 1;
+}
+
+.add-form__input:disabled {
+  background-color: #eee;
+}
+
+.add-form__box-submit {
+  text-align: right;
+  padding-right: 28px;
+}
+
+.add-form__submit {
+  max-width: 200px;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: inherit;
+  color: #fff;
+  background-color: #6d5bd0;
+  border-radius: 6px;
+}

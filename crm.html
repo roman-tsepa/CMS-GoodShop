@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRM-ShopOnline</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <section class="modal">
+    <div class="container modal__container">
+
+      <button class="modal__close" type="button" aria-label="Закрыть окно">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+          <path d="M2 2L22 22" stroke="#6e6893" stroke-width="3" stroke-linecap="round" />
+          <path d="M2 22L22 2" stroke="#6e6893" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <h2 class="modal__caption">Добавить товар</h2>
+
+      <form class="add-form" name="formAdd" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <fieldset class="add-form__inner">
+
+          <label class="add-form__label" for="name">Наименование</label>
+          <input class="add-form__input" id="name" name="name" type="text" required>
+
+          <label class="add-form__label" for="category">Категория</label>
+          <input class="add-form__input" id="category" name="category" type="text" required>
+
+          <label class="add-form__label" for="units">Единицы измерения</label>
+          <input class="add-form__input" id="units" name="units" type="text" required>
+
+          <label class="add-form__label" for="discount">Дисконт</label>
+          <div class="add-form__wrap-discount">
+            <input class="add-form__checkbox" type="checkbox" required>
+            <input class="add-form__input" id="discount" name="discount" type="text" required disabled>
+          </div>
+
+          <label class="add-form__label" for="description">Описание</label>
+          <textarea
+            class="add-form__input"
+            id="description"
+            name="description"
+            rows="6"
+            required
+          ></textarea>
+
+          <label class="add-form__label" for="quantity">Количество</label>
+          <input class="add-form__input" id="quantity" name="quantity" type="number" required>
+
+          <label class="add-form__label" for="price">Цена</label>
+          <input class="add-form__input" id="price" name="price" type="number" required>
+
+        </fieldset>
+
+        <div class="add-form__box-submit">
+          <button class="add-form__submit" type="submit">Добавить товар</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

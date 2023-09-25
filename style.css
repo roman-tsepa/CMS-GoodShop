@@ -1,0 +1,4 @@
+@import "styles/normalize.css";
+@import "styles/global.css";
+@import "blocks/modal.css";
+@import "blocks/add-form.css";
